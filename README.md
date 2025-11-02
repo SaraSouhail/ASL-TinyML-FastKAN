@@ -12,7 +12,7 @@ This project builds a compact and optimized deep-learning pipeline to recognize 
 - `LICENSE` — MIT recommended.  
 - `README.md` — This file.  
 - `fastkan_quantized_pruned.pth` — Final compressed model (~12 MB).
-- `rename_dataset.py` — Script to rename duplicate images when merging.
+- `rename_dataset.ipynb` — Script to rename duplicate images when merging.
 - `data_merged` — Folder contains all the data merged with changing name of the images ( 18 Go ).
 - `data_preprocessed` —  Folder contains the images preprocessed  of each class ( 9 Go ).
 
