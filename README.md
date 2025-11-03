@@ -33,6 +33,7 @@ When multiple datasets (e.g., `data 1`, `data 2`, …) contain images with the s
 A unified, clean dataset ready for preprocessing and training — all duplicates resolved and files consistently named.  
 
 **before :**
+```bash
 data 1/
 ├── A/
 │   ├── 1.jpg
@@ -40,13 +41,19 @@ data 1/
 data 2/
 ├── A/
 │   ├── 1.jpg   # duplicate filename
+```
 
 **After running rename_dataset.py :**
+```bash
 data_merged/
 └── a/
     ├── 1.jpg
     ├── 1_1.jpg   ✅ duplicate safely renamed
     ├── 2.jpg
+
+```
+
+
 
 ---
 
@@ -89,16 +96,20 @@ To successfully run the notebook, you must **first prepare the dataset** as foll
 
 1. Download the ASL datasets (from Kaggle or your own sources).  
    Each dataset should be placed in the root directory with names like:
+```bash
 data 1/
 data 2/
 data 3/
+```
 
-2. Once all datasets are placed in the root folder, run the following command in your terminal to merge and clean them:
+
+3. Once all datasets are placed in the root folder, run the following command in your terminal to merge and clean them:
 ```bash
 python rename_dataset.py
 ```
 After running the script, you should have a clean and unified dataset located at `data_merged/`:
 Results should be like this :
+```bash
 data_merged/
 ├── a/
 ├── b/
@@ -108,6 +119,8 @@ data_merged/
 ├── 1/
 ├── ...
 └── space/
+```
+
 
 
 ### ⚙️ Environment Requirements
